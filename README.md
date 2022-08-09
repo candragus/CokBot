@@ -1,24 +1,29 @@
-<p align="center">
-<img src="https://telegra.ph/file/f3b2f9e862e1352d4fd94.jpg" alt="nz" width="350"/>
-</p>
+<a href="https://www.gambaranimasi.org/cat-bintang-280.htm"><img src="https://www.gambaranimasi.org/data/media/280/animasi-bergerak-bintang-0157.gif" border="0" alt="animasi-bergerak-bintang-0157" /></a><a href="https://www.gambaranimasi.org/cat-bintang-280.htm"><img src="https://www.gambaranimasi.org/data/media/280/animasi-bergerak-bintang-0157.gif" border="0" alt="animasi-bergerak-bintang-0157" /></a>
 
-## Gojo-Satoru
+<p align="center"><a href="https://t.me/yangmutebabi"><img src="https://telegra.ph/file/1cdbbd432ccb206eb4c9b.jpg"</a></p>
+<p align="right"><a href="https://www.gambaranimasi.org/cat-bintang-280.htm"><img src="https://www.gambaranimasi.org/data/media/280/animasi-bergerak-bintang-0157.gif" border="0" alt="animasi-bergerak-bintang-0157" /></><a href="https://www.gambaranimasi.org/cat-bintang-280.htm"><img src="https://www.gambaranimasi.org/data/media/280/animasi-bergerak-bintang-0157.gif" border="0" alt="animasi-bergerak-bintang-0157" /></a></p>
+<br>
 
-> <a href="https://youtu.be/W-QCp2fWRTo"><img src="https://img.shields.io/badge/Tutorial-Video-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://www.youtube.com/c/BOTINDO" /><br>
+## CokBot
 
-> [Automated Multi Device whatsapp bot created](https://github.com/nexusNw/Gojo-Satoru) by [nexusNw](github.com/nexusNw)
+> <a href="https://github.com/candragus/CokBot/stargazers"><img src="https://img.shields.io/badge/Tutorial-Video-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://github.com/candragus/CokBot/stargazers" /><br>
 
-> Dont forget to give a star bro.🥲 IF Heroku Deploy seems Error, Fork This Repo And Try Deploy Again
+> [Created By](https://github.com/candragus) Also [『A̶̢͛̐͒͛̐̒̐̌ ̸̝͎̦́̔͠Β̸͌͂̑̆𖣘』](github.com/ABKeceX)
 
-> If The Api Of This Bot Run Empty You Can Change it To Your Own Api By Changing [Here](https://github.com/nexusNw/Gojo-Satoru/blob/master/settings.js#L18) And Register [here](https://zenzapis.xyz/) to get apikey
+<br>
+<table align="center", table style="background-color:rgba(255, 255, 255, 0.03);"><td><b><h2><a href="https://github.com/candragus/CokUBot/stargazers">Give Star To Repo✨</a></td></b></h2></table>
+<br>
+
+
+> Jika **Api** dari Bot ini habis, Kamu bisa menggantinya dengan **Api** milikmu sendiri dengan menggantinya [**Disini**](https://github.com/candragus/CokBot/blob/master/settings.js#L18) Dan Mendaftarnya [**Disini**](https://zenzapis.xyz/) Untuk mendapatkan ApiKey
 
 
 </br>
 
-<a href="https://github.com/nexusNw"><img title="Author" src="https://img.shields.io/badge/Author-nexusNw-blue.svg?color=54aeff&style=for-the-badge&logo=github" /></a>  
-<a href="https://github.com/nexusNw/Gojo-Satoru"><img title="Stars" src="https://img.shields.io/github/stars/nexusNw/Gojo-Satoru?color=54aeff&style=flat-square" /></a>
-<a href="https://github.com/nexusNw/Gojo-Satoru/network/members"><img title="Forks" src="https://img.shields.io/github/forks/nexusNw/Gojo-Satoru?color=54aeff&style=flat-square" /></a>
-<a href="https://github.com/nexusNw/Gojo-Satoru/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/nexusNw/Gojo-Satoru?label=watchers&color=54aeff&style=flat-square" /></a> <br>
+<a href="https://github.com/candragus"><img title="Author" src="https://img.shields.io/badge/Author-candragus-orange.svg?color=f08707&style=for-the-badge&logo=github" /></a>  
+<a href="https://github.com/candragus/CokBot"><img title="Stars" src="https://img.shields.io/github/stars/candragus/CokBot?color=f08707&style=flat-square" /></a>
+<a href="https://github.com/candragus/CokBot/network/members"><img title="Forks" src="https://img.shields.io/github/forks/candragus/CokBot?color=f08707&style=flat-square" /></a>
+<a href="https://github.com/candragus/CokBot/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/candragus/CokBot?label=watchers&color=f08707&style=flat-square" /></a> <br>
 
 ---
 
@@ -35,14 +40,14 @@ Add FFmpeg to PATH environment variable
 </details>
 
 
-<!-- Start via Heroku -->
+<!-- Start Melalui Heroku -->
 <b><details><summary>Start via Heroku</summary></b>
 
 * Scan QR In Your Whatsapp From [Here](https://replit.com/@nexusNw/M-D-SCANNER-V2?v=1?outputonly=1&lite=1#index.js)
-* Fork This Repo By Clicking [Here](https://github.com/nexusNw/Gojo-Satoru/fork)
-* then Deploy The Bot From [Here](https://heroku.com/deploy)
-* Wait 5-10 Min To Deploy 
-* After Deploying On The Worker And Check The Logs
+* Fork Repo [**Disini**](https://github.com/candragus/CokBot/fork)
+* Lalu Deploy Bot [**Disini**](https://heroku.com/deploy)
+* Tunggu 5-10 Menit Untuk Deploy 
+* Setelah itu cek Logs 
 
 </details>
 
@@ -61,7 +66,7 @@ Add FFmpeg to PATH environment variable
 > pkg install ffmpeg -y 
 > pkg install wget
 > pkg install imagemagick -y
-> git clone https://github.com/nexusNw/Gojo-Satoru
+> git clone https://github.com/candragus/CokBot
 > cd Gojo-Satoru
 > npm install
 ```
@@ -101,7 +106,7 @@ npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 |   Owner     |       ✅    |
 |   Islami     |       ✅     |
 |   Downloader     |       ✅     |
-|   Webzone     |       ✅[      |
+|   Webzone     |       ✅      |
 |   Searching     |       ✅      |
 |   Textpro     |       ✅      |
 |   Ephoto     |       ✅     |
@@ -123,8 +128,8 @@ npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 
 ## ```Connect With Me```
 <p align="center">
-<a href="https://wa.me/918129624000"><img src="https://img.shields.io/badge/Contact Nexus-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://youtube.com/channel/UCqoUjPvDdb0kjXNYdvPPpHQ"><img src="https://img.shields.io/badge/Subscribe Nexus-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://www.youtube.com/c/BOTINDO" /><br>
+<a href="https://wa.me/081350042483"><img src="https://img.shields.io/badge/Contact ABKeceX-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://wa.me/081338178425"><img src="https://img.shields.io/badge/Contact Bot-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://wa.me/081338178425" /><br>
 </p>
 
 </details>
@@ -137,6 +142,7 @@ npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 * [`Alien-Alfa`](https://github.com/Alien-Alfa)
 * [`DGXeon`](https://github.com/DGXeon)
 * [`AflahXrd`](https://github.com/nexusNw)
+* ['ABKeceX'](https://github.com/ABKeceX)
 
 
 License: [MIT](https://github.com/Gojo-Satoru/LICENSE)

@@ -104,15 +104,15 @@ async function startGojoMdNx() {
        }
        let wm_fatih = { url : ppgc }
        if (pea[0].announce == true) {
-       GojoMdNx.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nThe Group Has Been Closed By Admin, Now Only Admin Can Send Messages !`, `Group Settings Change Message`, wm_fatih, [])
+       GojoMdNx.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Telah Ditutup Admin Yang Keren, Sekarang Hanya Admin Yang Bisa Ngetik!`, `Group Settings Change Message`, wm_fatih, [])
        } else if(pea[0].announce == false) {
-       GojoMdNx.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nThe Group Has Been Opened By Admin, Now Participants Can Send Messages !`, `Group Settings Change Message`, wm_fatih, [])
+       GojoMdNx.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\Group Telah Dibuka Admin Yang Keren, Sekarang Members/Nolep Disini Bisa Mengirim Pesan !`, `Group Settings Change Message`, wm_fatih, [])
        } else if (pea[0].restrict == true) {
-       GojoMdNx.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Info Has Been Restricted, Now Only Admin Can Edit Group Info !`, `Group Settings Change Message`, wm_fatih, [])
+       GojoMdNx.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Info Terbatas, Sekarang Hanya Admin Yang Bisa Mengedit Info Group !`, `Group Settings Change Message`, wm_fatih, [])
        } else if (pea[0].restrict == false) {
-       GojoMdNx.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Info Has Been Opened, Now Participants Can Edit Group Info !`, `Group Settings Change Message`, wm_fatih, [])
+       GojoMdNx.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Info Dibuka, Sekarang Members/Nolep Disini  Bisa Mengedit Info Group !`, `Group Settings Change Message`, wm_fatih, [])
        } else {
-       GojoMdNx.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Subject Has Been Changed To *${pea[0].subject}*`, `Group Settings Change Message`, wm_fatih, [])
+       GojoMdNx.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Subject Telah Diganti Menjadi *${pea[0].subject}*`, `Group Settings Change Message`, wm_fatih, [])
      }
     })
 
@@ -145,16 +145,16 @@ Kon = await getBuffer(`https://hardianto.xyz/api/welcome3?profile=${encodeURICom
 Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/8bbe8a7de5c351dfcb077.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
                 if (anu.action == 'add') {
                     GojoMdNx.sendMessage(anu.id, { image: Kon, contextInfo: { mentionedJid: [num] }, caption: `
-⭐✑ Hi👋 @${num.split("@")[0]},
-⭐✑ Welcome To ${metadata.subject}
+乂✑ Hello👋 @${num.split("@")[0]},
+乂✑ Welcome To ${metadata.subject}
 
-⭐✑ Description: ${metadata.desc}
+乂✑ Description: ${metadata.desc}
 
-⭐✑ Welcome To Our Comfortable Happy😋, Sometimes Loud😜, Usually Messy🤥, Full Of Love🥰, HOME😌!!`} )
+乂✑ Welcome To Our Comfortable Happy😋, Sometimes Loud😜, Usually Messy🤥, Full Of Love🥰, HOME😌!!`} )
                 } else if (anu.action == 'remove') {
                     GojoMdNx.sendMessage(anu.id, { image: Tol, contextInfo: { mentionedJid: [num] }, caption: `⭐✑ @${num.split("@")[0]} Left ${metadata.subject}
 
-⭐✑ I'm Not Sure If It Was A Goodbye Charm, But It Was Fun While It Lasted 😌✨` })
+乂✑ I'm Not Sure If It Was A Goodbye Charm, But It Was Fun While It Lasted 😌✨` })
                 }
             }
         } catch (err) {
@@ -233,13 +233,13 @@ Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURICom
         if (connection === 'close') {
         let reason = new Boom(lastDisconnect?.error)?.output.statusCode
             if (reason === DisconnectReason.badSession) { console.log(`Bad Session File, Please Delete Session and Scan Again`); GojoMdNx.logout(); }
-            else if (reason === DisconnectReason.connectionClosed) { console.log("🐦Connection closed, reconnecting...."); startGojoMdNx(); }
-            else if (reason === DisconnectReason.connectionLost) { console.log("🐦Connection Lost from Server, reconnecting..."); startGojoMdNx(); }
-            else if (reason === DisconnectReason.connectionReplaced) { console.log("🐦Connection Replaced, Another New Session Opened, Please Close Current Session First"); GojoMdNx.logout(); }
-            else if (reason === DisconnectReason.loggedOut) { console.log(`🐦Device Logged Out, Please Scan Again And Run.`); GojoMdNx.logout(); }
-            else if (reason === DisconnectReason.restartRequired) { console.log("🐦Restart Required, Restarting..."); startGojoMdNx(); }
-            else if (reason === DisconnectReason.timedOut) { console.log("🐦Connection TimedOut, Reconnecting..."); startGojoMdNx(); }
-            else GojoMdNx.end(`🐦Unknown DisconnectReason: ${reason}|${connection}`)
+            else if (reason === DisconnectReason.connectionClosed) { console.log("乂Connection closed, reconnecting...."); startGojoMdNx(); }
+            else if (reason === DisconnectReason.connectionLost) { console.log("乂Connection Lost from Server, reconnecting..."); startGojoMdNx(); }
+            else if (reason === DisconnectReason.connectionReplaced) { console.log("乂Connection Replaced, Another New Session Opened, Please Close Current Session First"); GojoMdNx.logout(); }
+            else if (reason === DisconnectReason.loggedOut) { console.log(`乂Device Logged Out, Please Scan Again And Run.`); GojoMdNx.logout(); }
+            else if (reason === DisconnectReason.restartRequired) { console.log("乂Restart Required, Restarting..."); startGojoMdNx(); }
+            else if (reason === DisconnectReason.timedOut) { console.log("乂Connection TimedOut, Reconnecting..."); startGojoMdNx(); }
+            else GojoMdNx.end(`乂Unknown DisconnectReason: ${reason}|${connection}`)
         }
         console.log('Connected...', update)
     })

@@ -128,8 +128,8 @@ npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 
 ## ```Connect With Me```
 <p align="center">
-<a href="https://wa.me/081350042483"><img src="https://img.shields.io/badge/Contact ABKeceX-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://wa.me/081338178425"><img src="https://img.shields.io/badge/Contact Bot-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://wa.me/081338178425" /><br>
+<a href="https://api.whatsapp.com/send?phone=081350042483&text=Thanks for the Repo!!"><img src="https://img.shields.io/badge/Contact ABKeceX-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://api.whatsapp.com/send?phone=081338178425&text=Thanks for the Repo!!)"><img src="https://img.shields.io/badge/Contact Bot-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://wa.me/081338178425" /><br>
 </p>
 
 </details>

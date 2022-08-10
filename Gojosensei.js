@@ -202,11 +202,11 @@ module.exports = GojoMdNx = async (GojoMdNx, m, chatUpdate, store) => {
 	
 	//group target \\
 const reply = (teks) => {
-            GojoMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` 乂𝐂𝐨𝐤𝐁𝐨𝐭乂`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./GojoMedia/gojo.jpg`),"sourceUrl": "https://telegra.ph/file/1cdbbd432ccb206eb4c9b.jpg"}}}, { quoted: m})
+            GojoMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` 乂𝐂𝐨𝐤𝐁𝐨𝐭乂`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync('./GojoMedia/ABKeceX.jpg'),"sourceUrl": "https://telegra.ph/file/1cdbbd432ccb206eb4c9b.jpg"}}}, { quoted: m})
         }
         
         const replay = (teks) => {
-            GojoMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` 乂𝐂𝐨𝐤𝐁𝐨𝐭乂`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./GojoMedia/gojo.jpg`),"sourceUrl": "https://telegra.ph/file/1cdbbd432ccb206eb4c9b.jpg"}}}, { quoted: m})
+            GojoMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` 乂𝐂𝐨𝐤𝐁𝐨𝐭乂`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync('./GojoMedia/ABKeceX.jpg'),"sourceUrl": "https://telegra.ph/file/1cdbbd432ccb206eb4c9b.jpg"}}}, { quoted: m})
         }
 	
         //Public & Self\\
@@ -1774,7 +1774,7 @@ break
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '乂Pemilik乂',
+                                    displayText: '乂Owner乂',
                                     id: 'owner'
                                 }
                             }]
@@ -3376,7 +3376,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                         hydratedTemplate: {
                             hydratedContentText: anu,
                             locationMessage: {
-                            jpegThumbnail: fs.readFileSync('./GojoMedia/gojo.jpg')},
+                            jpegThumbnail: fs.readFileSync('./GojoMedia/ABKeceX.jpg')},
                             hydratedFooterText: `
 ㅤㅤ 乂𝐂𝐨𝐤𝐁𝐨𝐭乂 
 乂╼━━━━━━𖣘━━━━━━━乂
@@ -3438,7 +3438,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                         hydratedTemplate: {
                             hydratedContentText: anu,
                             locationMessage: {
-                            jpegThumbnail: fs.readFileSync('./GojoMedia/gojo.jpg')},
+                            jpegThumbnail: fs.readFileSync('./GojoMedia/ABKeceX.jpg')},
                             hydratedFooterText: `
 ㅤㅤ 乂𝐂𝐨𝐤𝐁𝐨𝐭乂 
 乂╼━━━━━━𖣘━━━━━━━乂
@@ -3873,7 +3873,7 @@ case 'allmenu': {
                         hydratedTemplate: {
                             hydratedContentText: anu,
                             locationMessage: {
-                            jpegThumbnail: fs.readFileSync('./GojoMedia/gojo.jpg')},
+                            jpegThumbnail: fs.readFileSync('./GojoMedia/ABKeceX.jpg')},
                             hydratedFooterText: `${pushname}`,
                             hydratedButtons: [{
                                 urlButton: {

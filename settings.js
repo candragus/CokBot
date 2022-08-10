@@ -19,9 +19,9 @@ global.APIKeys = {
 }
 
 //customize settings\\
-global.owner = ['https://wa.me/+6281350042483']
-global.premium = ['https://wa.me/+6281350042483']
-global.ownernomer = 'https://wa.me/+6281350042483'
+global.owner = ['6281350042483']
+global.premium = ['6281350042483']
+global.ownernomer = '6281350042483'
 global.ownername = '『A̶̢͛̐͒͛̐̒̐̌ ̸̝͎̦́̔͠Β̸͌͂̑̆𖣘』'
 global.botname = '乂𝐂𝐨𝐤𝐁𝐨𝐭乂'
 global.footer = '©yangmutebabi.'

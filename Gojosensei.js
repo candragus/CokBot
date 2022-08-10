@@ -229,7 +229,7 @@ const reply = (teks) => {
             console.log('Limit Reseted')
         }, {
             scheduled: true,
-            timezone: "Asia/Kolkata"
+            timezone: "Asia/Makassar"
         })
         
 	//auto set bio\\
@@ -4018,7 +4018,7 @@ case 'ownermenu': case 'ownmenu':
 var unicorn = await getBuffer(picak+'Owner Menu')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┏━ㅤ「 ${botname} 」━━⭓ 
-┃╔═✪「 OWNER 」乂
+┃╔═乂「 OWNER 」乂
 ┃╠${prefix}grouplink
 ┃╠${prefix}ephemeral [option]
 ┃╠${prefix}setgcpp [image]
@@ -4279,7 +4279,7 @@ var unicorn = await getBuffer(picak+'Developer')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 Thanks to Me ( 乂ABKeceX乂 )
 zulfhanmt ( MySelf )
-乂 Yang Menguru Sexy Script ini !!!`,unicorn, [{"urlButton": {"displayText": "𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩","url": `${wa}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🔰𝐃𝐨𝐧𝐚𝐭𝐞🔰","id": 'donate'}},{"quickReplyButton": {"displayText": "乂Owner乂","id": 'owner'}}] )
+乂 Yang Mengurus Sexy Script ini !!!`,unicorn, [{"urlButton": {"displayText": "𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩","url": `${wa}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🔰𝐃𝐨𝐧𝐚𝐭𝐞🔰","id": 'donate'}},{"quickReplyButton": {"displayText": "乂Owner乂","id": 'owner'}}] )
 break
             default:
                 if (budy.startsWith('=>')) {

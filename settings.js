@@ -19,9 +19,9 @@ global.APIKeys = {
 }
 
 //customize settings\\
-global.owner = ['Your Number']
-global.premium = ['Your Number']
-global.ownernomer = 'Your Number'
+global.owner = ['https://wa.me/+6281350042483']
+global.premium = ['https://wa.me/+6281350042483']
+global.ownernomer = 'https://wa.me/+6281350042483'
 global.ownername = '『A̶̢͛̐͒͛̐̒̐̌ ̸̝͎̦́̔͠Β̸͌͂̑̆𖣘』'
 global.botname = '乂𝐂𝐨𝐤𝐁𝐨𝐭乂'
 global.footer = '©yangmutebabi.'
@@ -29,6 +29,8 @@ global.ig = 'https://instagram.com/zulfhanmt'
 global.region = 'Indonesia, Malaysia, Singapore, India'
 global.sc = 'https://api.whatsapp.com/send?phone=+6281350042483&text=Halo Bang'
 global.myweb = 'https://api.whatsapp.com/send?phone=+6281350042483&text=Halo Bang'
+global.wa = 'https://wa.me/+6281350042483'
+global.wa2= 'https://wa.me/+6281338178425'
 global.packname = '乂𝐂𝐨𝐤𝐁𝐨𝐭乂'
 global.author = '🐦『A̶̢͛̐͒͛̐̒̐̌ ̸̝͎̦́̔͠Β̸͌͂̑̆𖣘』'
 global.sessionName = 'session'
@@ -59,7 +61,7 @@ global.mess = {
    umpanawal: 5,
    potionawal: 1
 }
-global.thumb = fs.readFileSync('./GojoMedia/gojo.jpg')
+global.thumb = fs.readFileSync('https://telegra.ph/file/1cdbbd432ccb206eb4c9b.jpg')
 global.flaming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
 global.fluming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=fluffy-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
 global.flarun = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=runner-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='

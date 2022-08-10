@@ -3438,7 +3438,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                         hydratedTemplate: {
                             hydratedContentText: anu,
                             locationMessage: {
-                            jpegThumbnail: fs.readFileSync('./GojoMedia/gojo.jpg')}, 
+                            ${thumb}, 
                             hydratedFooterText: `
 ㅤㅤ 乂𝐂𝐨𝐤𝐁𝐨𝐭乂 
 乂╼━━━━━━𖣘━━━━━━━乂
@@ -3821,22 +3821,22 @@ case 'allmenu': {
 ┃
 ┃╠═乂「 VOICE CHANGER 」乂
 ┃╠${prefix}bass [reply aud]
-┃╠${prefix}blown 
-┃╠${prefix}deep 
+┃╠${prefix}blown
+┃╠${prefix}deep
 ┃╠${prefix}earrape 
 ┃╠${prefix}fast 
 ┃╠${prefix}fat 
-┃╠${prefix}nightcore 
-┃╠${prefix}reverse 
-┃╠${prefix}robot 
-┃╠${prefix}slow 
+┃╠${prefix}nightcore
+┃╠${prefix}reverse
+┃╠${prefix}robot
+┃╠${prefix}slow
 ┃╠${prefix}squirrel [reply audio]
 ┃
 ┃╠══乂「 ISLAMIC 」乂
 ┃╠${prefix}juzamma
 ┃
 ┃╠══乂「 HOROSCOPE 」乂
-┃╠${prefix}nomorhoki 
+┃╠${prefix}nomorhoki
 ┃╠${prefix}artimimpi 
 ┃╠${prefix}artinama 
 ┃╠${prefix}ramaljodoh 
@@ -3848,7 +3848,7 @@ case 'allmenu': {
 ┃╠${prefix}jadiannikah 
 ┃╠${prefix}sifatusaha 
 ┃╠${prefix}rezeki 
-┃╠${prefix}pekerjaan 
+┃╠${prefix}pekerjaan
 ┃╠${prefix}nasib
 ┃╠${prefix}penyakit 
 ┃╠${prefix}tarot 
@@ -3873,7 +3873,7 @@ case 'allmenu': {
                         hydratedTemplate: {
                             hydratedContentText: anu,
                             locationMessage: {
-                            jpegThumbnail: fs.readFileSync('https://telegra.ph/file/1cdbbd432ccb206eb4c9b.jpg')},
+                            jpegThumbnail: 'https://telegra.ph/file/1cdbbd432ccb206eb4c9b.jpg'},
                             hydratedFooterText: `${pushname}`,
                             hydratedButtons: [{
                                 urlButton: {

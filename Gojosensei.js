@@ -138,7 +138,7 @@ module.exports = GojoMdNx = async (GojoMdNx, m, chatUpdate, store) => {
         const pushname = m.pushName || "No Name"
         const botNumber = await GojoMdNx.decodeJid(GojoMdNx.user.id)
         const isCreator = [botNumber, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
-        const isDuo = [botNumber, ...global.duo].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
+        const isDuo = [global.duo].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
         const itsMe = m.sender == botNumber ? true : false
         const text = q = args.join(" ")
         const quoted = m.quoted ? m.quoted : m
@@ -159,7 +159,7 @@ module.exports = GojoMdNx = async (GojoMdNx, m, chatUpdate, store) => {
     	const isPremium = isCreator || global.premium.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) || false
 	    
         //member\\
-        let picaks = [glowing,fluming]
+        let picaks = [glowing]
 		let picak = picaks[Math.floor(Math.random() * picaks.length)]
 		
           try {
@@ -3656,7 +3656,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
     case 'donasi': case 'donate': case 'sewabot': case 'sewa': {
-                GojoMdNx.sendMessage(m.chat, { video: { url: 'https://telegra.ph/file/4d2db746ec687d622fb1f.mp4' }, caption: `*Heyyo COK ${m.pushName}*\n , Gada Donate" Cok Wkwkwkkw\n_Salam Saliman_` }, { quoted: m })
+                GojoMdNx.sendMessage(m.chat, { video: { url: 'https://telegra.ph/file/4d2db746ec687d622fb1f.mp4' }, caption: `*Heyyo COK ${m.pushName}*\nGada Donate" Cok Wkwkwkkw\n_Salam Saliman_` }, { quoted: m })
             }
             break
             case 'sc': case 'script': {
@@ -3664,7 +3664,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
 case 'allmenu': 
-var unicorn = await getBuffer(global.thumb)
+var unicorn = await getBuffer(picak+'All Menu')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┏━ㅤ「 *${botname}* 」━━⭓ 
 ┃╔══乂「 MAIN 」乂

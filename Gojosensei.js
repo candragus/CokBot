@@ -107,7 +107,7 @@ const nexusnw = require('xfarr-api')
  let _limit = JSON.parse(fs.readFileSync('./storage/user/limit.json'));
  let _buruan = JSON.parse(fs.readFileSync('./storage/user/hasil_buruan.json'));
  let _darahOrg = JSON.parse(fs.readFileSync('./storage/user/darah.json'))
-
+ let { hentaiimg, hentaivid } = require('./plugin/hentai')
 //Database\\
 let setik = JSON.parse(fs.readFileSync('./database/setik.json'));
 let vien = JSON.parse(fs.readFileSync('./database/vien.json'));
@@ -137,7 +137,7 @@ module.exports = GojoMdNx = async (GojoMdNx, m, chatUpdate, store) => {
         const args = body.trim().split(/ +/).slice(1)
         const pushname = m.pushName || "No Name"
         const botNumber = await GojoMdNx.decodeJid(GojoMdNx.user.id)
-        const isCreator = global.owner.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net')
+        const isCreator = [botNumber, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
         const isDuo = [botNumber, ...global.duo].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
         const itsMe = m.sender == botNumber ? true : false
         const text = q = args.join(" ")
@@ -2357,6 +2357,12 @@ break
             case 'waifu': case 'husbu': case 'neko': case 'shinobu': case 'megumin': case 'waifus': case 'nekos': case 'trap': case 'blowjob': {
                 reply(mess.wait)
                 GojoMdNx.sendMessage(m.chat, { image: { url: api('zenz', '/api/random/'+command, {}, 'apikey') }, caption: 'Generated Random ' + command }, { quoted: m })
+            }
+            break
+            case 'hentai': {
+                m.reply(mess.wait)
+                let result = await hentaivid()
+                await GojoMdNx.sendVideo(m.chat, result.hasil.video_1, `⭔ *Title :* ${result.hasil.title}\n⭔ *Views :* ${result.hasil.views_count}\n⭔ *Share :* ${result.hasil.share_count}\n⭔ *Category :* ${result.hasil.category}\n⭔ *Source :* ${result.hasil.link}`, m)
             }
             break
 	    case 'couplepp':  case 'ppcouple': {

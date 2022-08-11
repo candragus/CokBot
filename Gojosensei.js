@@ -3622,8 +3622,9 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                 reply(`𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 : ${wa}\n𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩𝟐 : ${wa2}`)
             }
             break
-case 'allmenu': {
-GojoMdNx.send5ButImg(from, global.thumb, `
+case 'allmenu': 
+var unicorn = await getBuffer(picak+'All Menu')
+await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┏━ㅤ「 *${botname}* 」━━⭓ 
 ┃╔══乂「 MAIN 」乂
 ┃╠ ${prefix}alive
@@ -3865,19 +3866,7 @@ GojoMdNx.send5ButImg(from, global.thumb, `
 ┃╠${prefix}zodiak 
 ┃╠${prefix}shio 
 ┃╚═══════乂
-┗━「 *Created By ${ownername}* 」━⭓`
-			    [{
-                                urlButton: {
-                                    displayText: '𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩',
-                                    url: `${wa}`
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: '乂Owner乂',
-                                    id: `${prefix}owner`
-                                }
-                            }] )
-            }
+┗━「 *Created By ${ownername}* 」━⭓`,unicorn, [{"urlButton": {"displayText": "𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🔰𝐃𝐨𝐧𝐚𝐭𝐞🔰","id": 'donate'}},{"quickReplyButton": {"displayText": "乂Owner乂","id": 'owner'}}] )
 break
 
 case 'mainmenu':

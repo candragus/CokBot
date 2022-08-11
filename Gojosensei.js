@@ -3286,8 +3286,8 @@ View List Of Messages With ${prefix}listmsg`)
                 oldd = performance.now()
                 respon = `
 Response Speed ${latensi.toFixed(4)} _Second_ \n ${oldd - neww} _miliseconds_\n\nRuntime : ${runtime(process.uptime))}
+	    }
 	    break
-
 
             case 'pings': case 'botstatus': case 'statusbot': {
                 const used = process.memoryUsage()

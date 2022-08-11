@@ -3623,7 +3623,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
 case 'allmenu':
-await GojoMdNx.send5ButImg(from, global.thumb)
+GojoMdNx.send5ButImg(from, global.thumb)
 	anu = `
 ┏━ㅤ「 *${botname}* 」━━⭓ 
 ┃╔══乂「 MAIN 」乂

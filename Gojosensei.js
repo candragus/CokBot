@@ -3622,7 +3622,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                 reply(`𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 : ${wa}\n𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩𝟐 : ${wa2}`)
             }
             break
-case 'allmenu':
+case 'allmenu': {
 GojoMdNx.send5ButImg(from, global.thumb, `
 ┏━ㅤ「 *${botname}* 」━━⭓ 
 ┃╔══乂「 MAIN 」乂
@@ -3877,6 +3877,7 @@ GojoMdNx.send5ButImg(from, global.thumb, `
                                     id: `${prefix}owner`
                                 }
                             }] )
+            }
 break
 
 case 'mainmenu':

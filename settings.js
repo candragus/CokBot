@@ -22,6 +22,7 @@ global.APIKeys = {
 global.owner = ['6281350042483']
 global.premium = ['6281350042483']
 global.ownernomer = '6281350042483'
+global.duo = ['6281350042483, 6282259826721, 6281340911800']
 global.ownername = '『A̶̢͛̐͒͛̐̒̐̌ ̸̝͎̦́̔͠Β̸͌͂̑̆𖣘』'
 global.botname = '乂𝐂𝐨𝐤𝐁𝐨𝐭乂'
 global.footer = '©yangmutebabi.'
@@ -37,16 +38,16 @@ global.sessionName = 'session'
 global.prefa = ['','!','.','🐦','🐤','🗿']
 global.sp = '⭔'
 global.mess = {
-    success: 'Done ✓',
-    admin: 'This Feature Is Only For Admin!✾ـٰٰٰٰٖٖٖٖٜ۬ـٰٰٰٖٖٖٜ۬ـٰٰٖٖٜ۬ـٰٖٜ۬ـٰٖٜ۬ـٰٰٖٖٜ۬ـٰٰٰٖٖٖٜ۬ـٰٰٰٰٖٖٖٖٜ۬ـٰٰٰٖٖٖٜ۬ـٰٰٖٖٜ۬ـٰٖٜ۬ـٰٖٜ۬ـٰٰٖٖٜ۬ـٰٰٰٖٖٖٜ۬ـٰٰٰٰٖٖٖٖٜ۬✾',
-    botAdmin: 'Bot Must Be Admin First!',
-    owner: 'This Feature Is Only For Owner!',
-    group: 'Feature Used Only For Groups!',
-    private: 'Features Used Only For Private Chat!',
-    bot: 'This Feature Is Only For Bot',
-    wait: 'Wait A minute...',
+    success: 'Senglesai ✓',
+    admin: 'Fitur Hanya Untuk Admin!✾ـٰٰٰٰٖٖٖٖٜ۬ـٰٰٰٖٖٖٜ۬ـٰٰٖٖٜ۬ـٰٖٜ۬ـٰٖٜ۬ـٰٰٖٖٜ۬ـٰٰٰٖٖٖٜ۬ـٰٰٰٰٖٖٖٖٜ۬ـٰٰٰٖٖٖٜ۬ـٰٰٖٖٜ۬ـٰٖٜ۬ـٰٖٜ۬ـٰٰٖٖٜ۬ـٰٰٰٖٖٖٜ۬ـٰٰٰٰٖٖٖٖٜ۬✾',
+    botAdmin: 'Bot Harus Jadi Admin Dulu BODOK!',
+    owner: 'Fitur Hanya Untuk Owner!',
+    group: 'Fitur Hanya Untuk Groups!',
+    private: 'Fitur Hanya Untuk Private Chat!',
+    bot: 'Fitur Hanya Untuk For Bot',
+    wait: 'Tunggu Bentar...',
     error: 'Error! Maybe Api Key Is Expired🤔!',
-    endLimit: 'Your Daily Limit Has Expired, The Limit Will Be Reset Every 12 Hours',
+    endLimit: 'Daily Limitmu Expired, Limit DiReset Setiap 12 Jam',
 }
     global.limitawal = {
     premium: "Infinity",
@@ -62,6 +63,7 @@ global.mess = {
    potionawal: 1
 }
 global.thumb = fs.readFileSync('./GojoMedia/ABKeceX.jpg')
+global.glowing = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=alien-glow-anim-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontname=heroes+assemble+3d+italic&fontsize=110&text='
 global.flaming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
 global.fluming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=fluffy-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
 global.flarun = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=runner-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
@@ -70,6 +72,6 @@ let file = require.resolve(__filename)
 fs.watchFile(file, () => {
 	fs.unwatchFile(file)
 	console.log(chalk.redBright(`Update'${__filename}'`))
-	delete require.cache[file]
+	delete require.cache[file]		
 	require(file)
 })

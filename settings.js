@@ -42,6 +42,7 @@ global.mess = {
     admin: 'Fitur Hanya Untuk Admin!✾ـٰٰٰٰٖٖٖٖٜ۬ـٰٰٰٖٖٖٜ۬ـٰٰٖٖٜ۬ـٰٖٜ۬ـٰٖٜ۬ـٰٰٖٖٜ۬ـٰٰٰٖٖٖٜ۬ـٰٰٰٰٖٖٖٖٜ۬ـٰٰٰٖٖٖٜ۬ـٰٰٖٖٜ۬ـٰٖٜ۬ـٰٖٜ۬ـٰٰٖٖٜ۬ـٰٰٰٖٖٖٜ۬ـٰٰٰٰٖٖٖٖٜ۬✾',
     botAdmin: 'Bot Harus Jadi Admin Dulu BODOK!',
     owner: 'Fitur Hanya Untuk Owner!',
+    duo: 'Fitur Hanya Untuk Si Bucin!!',
     group: 'Fitur Hanya Untuk Groups!',
     private: 'Fitur Hanya Untuk Private Chat!',
     bot: 'Fitur Hanya Untuk For Bot',

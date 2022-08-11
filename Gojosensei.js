@@ -3274,7 +3274,7 @@ View List Of Messages With ${prefix}listmsg`)
             break
             case 'duo': {
                 if (!isDuo) return replay(`${mess.duo}`)
-                GojoMdNx.public = false
+                GojoMdNx.duo = true
                 reply('Successful Change To Bucin Usage')
 	    }
             break

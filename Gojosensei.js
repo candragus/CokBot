@@ -3624,8 +3624,10 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                 reply(`𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 : ${wa}\n𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩𝟐 : ${wa2}`)
             }
             break
-case 'allmenu': {
-  	anu = `
+case 'allmenu':
+var unicorn = await getBuffer(picak+'Main Menu')
+await GojoMdNx.send5ButImg(from, global.thumb)
+		`
 ┏━ㅤ「 *${botname}* 」━━⭓ 
 ┃╔══乂「 MAIN 」乂
 ┃╠ ${prefix}alive
@@ -3867,15 +3869,7 @@ case 'allmenu': {
 ┃╠${prefix}zodiak 
 ┃╠${prefix}shio 
 ┃╚═══════乂
-┗━「 *Created By ${ownername}* 」━⭓`
-    const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-                    templateMessage: {
-                        hydratedTemplate: {
-                            hydratedContentText: anu,
-                            locationMessage: {
-                            jpegThumbnail: fs.readFileSync('./GojoMedia/ABKeceX.jpg')},
-                            hydratedFooterText: `${pushname}`,
-                            hydratedButtons: [{
+┗━「 *Created By ${ownername}* 」━⭓`,unicorn, [{
                                 urlButton: {
                                     displayText: '𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩',
                                     url: `${wa}`
@@ -3895,7 +3889,7 @@ break
 case 'mainmenu':
 var unicorn = await getBuffer(picak+'Main Menu')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
-┏━ㅤ「 ${botname} 」━━⭓ 
+┏━ㅤ「 ${botname} 」━━⭓
 ┃╔═乂「 MAIN 」乂
 ┃╠ ${prefix}alive
 ┃╠ ${prefix}script

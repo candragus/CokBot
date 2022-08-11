@@ -3391,7 +3391,6 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 ┣𖣘 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
 ┣𖣘 𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
 ┣𖣘 𝗢𝘄𝗻𝗲𝗿 𝗡𝘂𝗺𝗯𝗲𝗿 : ${global.owner}
-┣𖣘 𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
 ┣𖣘 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
 ┣𖣘 𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
 ╰乂╼━━━━━━𖣘━━━━━━━乂╯
@@ -3453,7 +3452,6 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 ┣𖣘 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
 ┣𖣘 𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
 ┣𖣘 𝗢𝘄𝗻𝗲𝗿 𝗡𝘂𝗺𝗯𝗲𝗿 : ${global.owner}
-┣𖣘 𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
 ┣𖣘 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
 ┣𖣘 𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
 ╰乂╼━━━━━━𖣘━━━━━━━乂╯
@@ -3625,9 +3623,8 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
 case 'allmenu':
-var unicorn = await getBuffer(picak+'Main Menu')
 await GojoMdNx.send5ButImg(from, global.thumb)
-		`
+	anu = `
 ┏━ㅤ「 *${botname}* 」━━⭓ 
 ┃╔══乂「 MAIN 」乂
 ┃╠ ${prefix}alive
@@ -3869,7 +3866,8 @@ await GojoMdNx.send5ButImg(from, global.thumb)
 ┃╠${prefix}zodiak 
 ┃╠${prefix}shio 
 ┃╚═══════乂
-┗━「 *Created By ${ownername}* 」━⭓`,unicorn, [{
+┗━「 *Created By ${ownername}* 」━⭓`
+			    [{
                                 urlButton: {
                                     displayText: '𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩',
                                     url: `${wa}`
@@ -3880,12 +3878,8 @@ await GojoMdNx.send5ButImg(from, global.thumb)
                                     id: `${prefix}owner`
                                 }
                             }]
-                        }
-                    }
-                }), { userJid: m.chat })
-                GojoMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
-            }
 break
+
 case 'mainmenu':
 var unicorn = await getBuffer(picak+'Main Menu')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `

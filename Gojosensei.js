@@ -556,16 +556,16 @@ Click https://wa.me/${botNumber.split`@`[0]}`, m, { mentions: [roof.p, roof.p2] 
             if (!afkTime || afkTime < 0) continue
             let reason = user.afkReason || ''
             reply(`
-Don't tag him!
-He's in AFK/Offline ${reason ? 'dengan alasan ' + reason : 'no reason'}
-It's been ${clockString(new Date - afkTime)}
+Heyy!
+Dia Sedang AFK/Offline ${reason ? 'dengan alasan ' + reason : 'no reason'}
+Sejak ${clockString(new Date - afkTime)}
 `.trim())
         }
 
         if (db.data.users[m.sender].afkTime > -1) {
             let user = global.db.data.users[m.sender]
             reply(`
-You Came Back Online From AFK${user.afkReason ? ' after ' + user.afkReason : ''}
+Kamu Kembali Online Setelah AFK${user.afkReason ? ' after ' + user.afkReason : ''}
 In ${clockString(new Date - user.afkTime)}
 `.trim())
             user.afkTime = -1
@@ -892,7 +892,7 @@ if (q.includes('--help')) return reply(examkosong)
                 let user = global.db.data.users[m.sender]
                 user.afkTime = + new Date
                 user.afkReason = text
-                reply(`${m.pushName} Has Gone Afk/Offline${text ? ': ' + text : ''}`)
+                reply(`${m.pushName} Telah Afk/Offline${text ? ': ' + text : ''}`)
             }
             break	
         case 'ttc': case 'ttt': case 'tictactoe': {
@@ -1485,9 +1485,9 @@ let teks = `╚»˙·٠•●♥ Tag All ♥●•٠·˙«╝
 	    break
                case 'vote': {
             if (!m.isGroup) return replay(`${mess.group}`)
-            if (m.chat in vote) replay(`_There Are Still Votes In This Chat!_\n\n*${prefix}delvote* - To Delete Vote Session`)
+            if (m.chat in vote) replay(`_Masih Ada Voting Di Chat!_\n\n*${prefix}delvote* - Untuk Menghapus Vote`)
             if (!text) return replay(`Enter Reason For Vote, Example: *${prefix + command} Handsome Owner*`)
-            reply(`Voting Starts!\n\n*${prefix}upvote* - For Upvote\n*${prefix}devote* - For Devote\n*${prefix}checkvote* - To Check The Vote\n*${prefix}delvote* - To Delete Vote Session`)
+            reply(`Voting Dimulai!\n\n*${prefix}upvote* - Untuk Upvote\n*${prefix}devote* - Untuk Devote\n*${prefix}checkvote* - Untuk Mengecek Vote\n*${prefix}delvote* - Untuk Menghapus Vote`)
             vote[m.chat] = [q, [], []]
             await sleep(1000)
             upvote = vote[m.chat][1]
@@ -1510,7 +1510,7 @@ let teks = `╚»˙·٠•●♥ Tag All ♥●•٠·˙«╝
 │ 
 └────
 
-*${prefix}delvote* - To Delete Vote Session`
+*${prefix}delvote* - Untuk Menghapus Vote`
 let buttonsVote = [
   {buttonId: `${prefix}upvote`, buttonText: {displayText: 'Upvote'}, type: 1},
   {buttonId: `${prefix}devote`, buttonText: {displayText: 'Devote'}, type: 1}
@@ -1527,7 +1527,7 @@ let buttonsVote = [
             break
                case 'upvote': {
             if (!m.isGroup) return replay(`${mess.group}`)
-            if (!(m.chat in vote)) return replay(`_*No Voting In This Group!*_\n\n*${prefix}vote* - To Start Voting`)
+            if (!(m.chat in vote)) return replay(`_*Tidak Ada Voting DiGroup!*_\n\n*${prefix}vote* - Untuk MemVoting`)
             isVote = vote[m.chat][1].concat(vote[m.chat][2])
             wasVote = isVote.includes(m.sender)
             if (wasVote) replay(`You've Voted`)
@@ -1551,7 +1551,7 @@ ${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')
 │ 
 └────
 
-*${prefix}delvote* - To Delete Vote Session`
+*${prefix}delvote* - Untuk Menghapus Vote`
             let buttonsUpvote = [
               {buttonId: `${prefix}upvote`, buttonText: {displayText: 'Upvote'}, type: 1},
               {buttonId: `${prefix}devote`, buttonText: {displayText: 'Devote'}, type: 1}
@@ -1569,7 +1569,7 @@ ${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')
              break
                 case 'devote': {
             if (!m.isGroup) return replay(`${mess.group}`)
-            if (!(m.chat in vote)) return replay(`_*No Voting In This Group!*_\n\n*${prefix}vote* - To Start Voting`)
+            if (!(m.chat in vote)) return replay(`_*Tidak Ada Voting DiGroup!*_\n\n*${prefix}vote* - Untuk MemVoting`)
             isVote = vote[m.chat][1].concat(vote[m.chat][2])
             wasVote = isVote.includes(m.sender)
             if (wasVote) return replay(`You've Voted`)
@@ -1593,7 +1593,7 @@ ${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')
 │ 
 └────
 
-*${prefix}delvote* - To Delete Vote Session`
+*${prefix}delvote* - Untuk Menghapus Vote`
             let buttonsDevote = [
               {buttonId: `${prefix}upvote`, buttonText: {displayText: 'Upvote'}, type: 1},
               {buttonId: `${prefix}devote`, buttonText: {displayText: 'Devote'}, type: 1}
@@ -1612,7 +1612,7 @@ ${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')
                  
 case 'checkvote':
 if (!m.isGroup) return replay(`${mess.group}`)
-if (!(m.chat in vote)) return replay(`_*No Voting In This Group!*_\n\n*${prefix}vote* - To Start Voting`)
+if (!(m.chat in vote)) return replay(`_*Tidak Ada Voting DiGroup!*_\n\n*${prefix}vote* - Untuk MemVoting`)
 teks_vote = `*「 VOTE 」*
 
 *Reason:* ${vote[m.chat][0]}
@@ -1640,9 +1640,9 @@ GojoMdNx.sendTextWithMentions(m.chat, teks_vote, m)
 break
 		case 'deletevote': case'delvote': case 'hapusvote': {
             if (!m.isGroup) return replay(`${mess.group}`)
-            if (!(m.chat in vote)) return replay(`_*No Voting In This Group!*_\n\n*${prefix}vote* - To Start Voting`)
+            if (!(m.chat in vote)) return replay(`_*Tidak Ada Voting DiGroup!*_\n\n*${prefix}vote* - Untuk MemVoting`)
             delete vote[m.chat]
-            reply('Successfully Deleted The Vote Session In This Group')
+            reply('Suksess Menghapus Voting Di Group')
 	    }
             break
                case 'group': case 'grup': {
@@ -1650,9 +1650,9 @@ break
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
                 if (args[0] === 'close'){
-                    await GojoMdNx.groupSettingUpdate(m.chat, 'announcement').then((res) => reply(`Successful Closing The Group`)).catch((err) => reply(jsonformat(err)))
+                    await GojoMdNx.groupSettingUpdate(m.chat, 'announcement').then((res) => reply(`Berhasil Menutup Group`)).catch((err) => reply(jsonformat(err)))
                 } else if (args[0] === 'open'){
-                    await GojoMdNx.groupSettingUpdate(m.chat, 'not_announcement').then((res) => reply(`Successful Opening The Group`)).catch((err) => reply(jsonformat(err)))
+                    await GojoMdNx.groupSettingUpdate(m.chat, 'not_announcement').then((res) => reply(`Berhasil Membuka Group`)).catch((err) => reply(jsonformat(err)))
                 } else {
                 let buttons = [
                         { buttonId: 'group open', buttonText: { displayText: 'Open' }, type: 1 },
@@ -1709,11 +1709,11 @@ break
                 if (args[0] === "on") {
                 if (db.data.chats[m.chat].mute) return reply(`Previously Active`)
                 db.data.chats[m.chat].mute = true
-                reply(`${GojoMdNx.user.name} Has Been Muted In This Group !`)
+                reply(`${GojoMdNx.user.name} Telah Dimute Di Group Ini !`)
                 } else if (args[0] === "off") {
                 if (!db.data.chats[m.chat].mute) return reply(`Previously Inactive`)
                 db.data.chats[m.chat].mute = false
-                reply(`${GojoMdNx.user.name} Has Been Unmuted In This Group!`)
+                reply(`${GojoMdNx.user.name} Telah Unmuted Di Group Ini!`)
                 } else {
                  let buttons = [
                         { buttonId: 'mute on', buttonText: { displayText: 'On' }, type: 1 },
@@ -1750,7 +1750,7 @@ break
             break
             case 'bcgc': case 'bcgroup': {
                 if (!isCreator) return replay(`${mess.owner}`)
-                if (!text) return replay(`Where Is The Text?\n\nExample : ${prefix + command} Nexus Handsome`)
+                if (!text) return replay(`Mana Pesannya?\n\Contoh : ${prefix + command} Abe Ganteng :D`)
                 let getGroups = await GojoMdNx.groupFetchAllParticipating()
                 let groups = Object.entries(getGroups).slice(0).map(entry => entry[1])
                 let anu = groups.map(v => v.id)
@@ -1786,7 +1786,7 @@ break
             break
             case 'bc': case 'broadcast': case 'bcall': {
                 if (!isCreator) return replay(`${mess.owner}`)
-                if (!text) return replay(`Where Is The Text?\n\nExample : ${prefix + command} Nexus`)
+                if (!text) return replay(`Mana Pesannya?\n\Contoh : ${prefix + command} Abe`)
                 let anu = await store.chats.all().map(v => v.id)
                 reply(`Send Broadcast To ${anu.length} Chat\nFinish Time ${anu.length * 1.5} Seconds`)
 		for (let yoi of anu) {
@@ -1808,14 +1808,14 @@ break
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '乂Pemilik乂',
+                                    displayText: 'Owner',
                                     id: 'owner'
                                 }
                             }]
                       let txt = `「 乂𝐂𝐨𝐤𝐁𝐨𝐭乂 」\n\n${text}`
                       GojoMdNx.send5ButImg(yoi, txt, GojoMdNx.user.name, global.thumb, btn)
 		}
-		reply('Broadcast Success')
+		reply('Broadcast Sukses')
             }
             break
             case 'chatinfo': case 'infochat': {
@@ -3378,7 +3378,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./GojoMedia/ABKeceX.jpg')},
                             hydratedFooterText: `
-ㅤㅤ 乂𝐂𝐨𝐤𝐁𝐨𝐭乂 
+ㅤㅤㅤ乂𝐂𝐨𝐤𝐁𝐨𝐭乂 
 乂╼━━━━━━𖣘━━━━━━━乂
 ┣𖣘「 ${pushname} 」▶
 ┣𖣘✑  SLIBAWW🎉
@@ -3386,14 +3386,14 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 乂╼━━━━━━𖣘━━━━━━━乂
 ╭乂╼━━━━━━𖣘━━━━━━━乂╮
 | 「 BOT INFO 」
-┣𖣘乂 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-┣𖣘乂 𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-┣𖣘乂 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
-┣𖣘乂 𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
-┣𖣘乂 𝗢𝘄𝗻𝗲𝗿 𝗡𝘂𝗺𝗯𝗲𝗿 : ${global.owner}
-┣𖣘乂 𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
-┣𖣘乂 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-┣𖣘乂 𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
+┣𖣘 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
+┣𖣘 𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
+┣𖣘 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
+┣𖣘 𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
+┣𖣘 𝗢𝘄𝗻𝗲𝗿 𝗡𝘂𝗺𝗯𝗲𝗿 : ${global.owner}
+┣𖣘 𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
+┣𖣘 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
+┣𖣘 𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
 ╰乂╼━━━━━━𖣘━━━━━━━乂╯
    │✑  ꜱɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ᴛᴏᴍʙᴏʟ ᴅɪʙᴀᴡᴀʜ
    └───────────────┈ ⳹`,
@@ -3440,7 +3440,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./GojoMedia/ABKeceX.jpg')},
                             hydratedFooterText: `
-ㅤㅤ 乂𝐂𝐨𝐤𝐁𝐨𝐭乂 
+ㅤㅤㅤ乂𝐂𝐨𝐤𝐁𝐨𝐭乂 
 乂╼━━━━━━𖣘━━━━━━━乂
 ┣𖣘「 ${pushname} 」▶
 ┣𖣘✑  SLEBEWW🎉
@@ -3448,14 +3448,14 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 乂╼━━━━━━𖣘━━━━━━━乂
 ╭乂╼━━━━━━𖣘━━━━━━━乂╮
 | 「 BOT INFO 」
-┣𖣘乂 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-┣𖣘乂 𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-┣𖣘乂 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
-┣𖣘乂 𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
-┣𖣘乂 𝗢𝘄𝗻𝗲𝗿 𝗡𝘂𝗺𝗯𝗲𝗿 : ${global.owner}
-┣𖣘乂 𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
-┣𖣘乂 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-┣𖣘乂 𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
+┣𖣘 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
+┣𖣘 𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
+┣𖣘 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
+┣𖣘 𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
+┣𖣘 𝗢𝘄𝗻𝗲𝗿 𝗡𝘂𝗺𝗯𝗲𝗿 : ${global.owner}
+┣𖣘 𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
+┣𖣘 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
+┣𖣘 𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
 ╰乂╼━━━━━━𖣘━━━━━━━乂╯
    │✑  ꜱɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ᴛᴏᴍʙᴏʟ ᴅɪʙᴀᴡᴀʜ
    └───────────────┈ ⳹`,

@@ -138,6 +138,7 @@ module.exports = GojoMdNx = async (GojoMdNx, m, chatUpdate, store) => {
         const pushname = m.pushName || "No Name"
         const botNumber = await GojoMdNx.decodeJid(GojoMdNx.user.id)
         const isCreator = [botNumber, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
+        const isDuo = [botNumber, ...global.duo].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
         const itsMe = m.sender == botNumber ? true : false
         const text = q = args.join(" ")
         const quoted = m.quoted ? m.quoted : m
@@ -158,7 +159,7 @@ module.exports = GojoMdNx = async (GojoMdNx, m, chatUpdate, store) => {
     	const isPremium = isCreator || global.premium.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) || false
 	    
         //member\\
-        let picaks = [flaming,fluming,flarun,flasmurf]
+        let picaks = [glowing,fluming]
 		let picak = picaks[Math.floor(Math.random() * picaks.length)]
 		
           try {
@@ -2254,7 +2255,7 @@ case 'lava': case 'rock': case 'bloodglas': case 'hallowen': case 'darkgold': ca
                 nexusnw.Drakor(`${text}`).then(async data => {
                     let txt = `*-----「 DRAKOR-SEARCH 」-----*\n\n`
                     for (let i of data) {
-                        txt += `*📫 Title :* ${i.judul}\n`
+                        txt += `*📫 Tiึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึีีีีีึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึีีีีีึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึีีีีีึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึtle :* ${i.judul}\n`
                         txt += `*📆 Years :* ${i.years}\n`
                         txt += `*🎥 Genre :* ${i.genre}\n`
                         txt += `*📚 Url :* ${i.url}\n-----------------------------------------------------\n`
@@ -2271,7 +2272,7 @@ case 'lava': case 'rock': case 'bloodglas': case 'hallowen': case 'darkgold': ca
                 nexusnw.Anime(q).then(async data => {
                     let txt = `*-------「 ANIME-SEARCH 」-------*\n\n`
                     for (let i of data) {
-                        txt += `*📫 Title :* ${i.judul}\n`
+                        txt += `*📫 Tiึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึีีีีีึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึีีีีีึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึีีีีีึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึtle :* ${i.judul}\n`
                         txt += `*📚 Url :* ${i.link}\n-----------------------------------------------------\n`
                     }
                     let gam = await getBuffer(data[0].thumbnail.replace('https://www.anime-planet.com',''))
@@ -2320,7 +2321,7 @@ case 'lava': case 'rock': case 'bloodglas': case 'hallowen': case 'darkgold': ca
                 nexusnw.Manga(`${text}`).then(async data => {
                     let txt = `*------「 MANGA-SEARCH 」------*\n\n`
                     for (let i of data) {
-                         txt += `*📫 Title :* ${i.judul}\n`
+                         txt += `*📫 Tiึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึีีีีีึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึีีีีีึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึีีีีีึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึtle :* ${i.judul}\n`
                          txt += `*📚 Url :* ${i.link}\n-----------------------------------------------------\n`
                     }
                     let gam = await getBuffer(data[0].thumbnail.replace('https://www.anime-planet.com',''))
@@ -3269,9 +3270,25 @@ View List Of Messages With ${prefix}listmsg`)
                 if (!isCreator) return replay(`${mess.owner}`)
                 GojoMdNx.public = false
                 reply('Successful Change To Self Usage')
-            }
             break
-            case 'ping': case 'botstatus': case 'statusbot': {
+		    
+            case 'duo': {
+                if (!isDuo) return replay(`${mess.duo}`)
+                GojoMdNx.public = false
+                reply('Successful Change To Duo Usage')
+            break
+            
+            case 'ping': {
+                let timestamp = speed()
+                let latensi = speed() - timestamp
+                neww = performance.now()
+                oldd = performance.now()
+                respon = `
+Response Speed ${latensi.toFixed(4)} _Second_ \n ${oldd - neww} _miliseconds_\n\nRuntime : ${runtime(process.uptime))}
+	    break
+
+
+            case 'pings': case 'botstatus': case 'statusbot': {
                 const used = process.memoryUsage()
                 const cpus = os.cpus().map(cpu => {
                     cpu.total = Object.keys(cpu.times).reduce((last, type) => last + cpu.times[type], 0)
@@ -3394,7 +3411,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 ┣𖣘 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
 ┣𖣘 𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
 ╰乂╼━━━━━━𖣘━━━━━━━乂╯
-   │✑  ꜱɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ᴛᴏᴍʙᴏʟ ᴅɪʙᴀᴡᴀʜ
+   │✑  ꜱɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ᴛᴏᴍʙᴏʟ ᴅiึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึีีีีีึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึีีีีีึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึีีีีีึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึʙᴀᴡᴀʜ
    └───────────────┈ ⳹`,
                             hydratedButtons: [{
                                 urlButton: {
@@ -3455,7 +3472,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 ┣𖣘 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
 ┣𖣘 𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
 ╰乂╼━━━━━━𖣘━━━━━━━乂╯
-   │✑  ꜱɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ᴛᴏᴍʙᴏʟ ᴅɪʙᴀᴡᴀʜ
+   │✑  ꜱɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ ᴛᴏᴍʙᴏʟ ᴅiึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึีีีีีึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึีีีีีึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึีีีีีึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึึʙᴀᴡᴀʜ
    └───────────────┈ ⳹`,
                             hydratedButtons: [{
                                 urlButton: {
@@ -3866,7 +3883,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}zodiak 
 ┃╠${prefix}shio 
 ┃╚═══════乂
-┗━「 *Created By ${ownername}* 」━⭓`,global.thumb, [{"urlButton": {"displayText": "𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🔰𝐃𝐨𝐧𝐚𝐭𝐞🔰","id": 'donate'}},{"quickReplyButton": {"displayText": "乂Owner乂","id": 'owner'}}] )
+┗━「 *Created By ${ownername}* 」━⭓`,unicorn, [{"urlButton": {"displayText": "𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🔰𝐃𝐨𝐧𝐚𝐭𝐞🔰","id": 'donate'}},{"quickReplyButton": {"displayText": "乂Owner乂","id": 'owner'}}] )
 break
 
 case 'mainmenu':

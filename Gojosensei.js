@@ -3270,12 +3270,13 @@ View List Of Messages With ${prefix}listmsg`)
                 if (!isCreator) return replay(`${mess.owner}`)
                 GojoMdNx.public = false
                 reply('Successful Change To Self Usage')
+	    }
             break
-		    
             case 'duo': {
                 if (!isDuo) return replay(`${mess.duo}`)
                 GojoMdNx.public = false
-                reply('Successful Change To Duo Usage')
+                reply('Successful Change To Bucin Usage')
+	    }
             break
             
             case 'ping': {

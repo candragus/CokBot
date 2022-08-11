@@ -3615,7 +3615,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
     case 'donasi': case 'donate': case 'sewabot': case 'sewa': {
-                GojoMdNx.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/1cdbbd432ccb206eb4c9b.jpg' }, caption: `*Hi Bro ${m.pushName}*\nDonation section is currently down🥲 , I know you are happy but me 🥲💔\n` }, { quoted: m })
+                GojoMdNx.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/4d2db746ec687d622fb1f.mp4' }, caption: `*Heyyo COK ${m.pushName}*\\n , Gada Donate" Cok Wkwkwkkw\nSalam Saliman` }, { quoted: m })
             }
             break
             case 'sc': case 'script': {
@@ -3623,7 +3623,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
 case 'allmenu': 
-var unicorn = await getBuffer(picak+'All Menu')
+var unicorn = await getBuffer(global.thumb)
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┏━ㅤ「 *${botname}* 」━━⭓ 
 ┃╔══乂「 MAIN 」乂
@@ -3866,7 +3866,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠${prefix}zodiak 
 ┃╠${prefix}shio 
 ┃╚═══════乂
-┗━「 *Created By ${ownername}* 」━⭓`,unicorn, [{"urlButton": {"displayText": "𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🔰𝐃𝐨𝐧𝐚𝐭𝐞🔰","id": 'donate'}},{"quickReplyButton": {"displayText": "乂Owner乂","id": 'owner'}}] )
+┗━「 *Created By ${ownername}* 」━⭓`,global.thumb, [{"urlButton": {"displayText": "𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🔰𝐃𝐨𝐧𝐚𝐭𝐞🔰","id": 'donate'}},{"quickReplyButton": {"displayText": "乂Owner乂","id": 'owner'}}] )
 break
 
 case 'mainmenu':

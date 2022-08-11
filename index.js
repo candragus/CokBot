@@ -225,6 +225,7 @@ Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURICom
     }
 	
     GojoMdNx.public = true
+    GojoMdNx.duo = true
 
     GojoMdNx.serializeM = (m) => smsg(GojoMdNx, m, store)
 

@@ -3412,8 +3412,25 @@ reply("Success Changing Menu To "+q)
 typemenu = 'catalog'
 reply("Success Changing Menu To "+q)
 }
-
                     break
+		
+		
+		
+		
+        // Anti viewOnceMessage
+        if (quoted.mtype == 'viewOnceMessage') {
+            if (!db.data.chats[m.chat].antionce) return
+            teks = `
+「 *Anti ViewOnce Message* 」
+⭔ Nama : ${GojoMdNx.getName(m.sender)} 
+⭔ Nomer : @${m.sender.split("@")[0]}
+⭔ Jam : ${moment.tz('Asia/Makassar').format('HH:mm:ss')} WIB
+⭔ Pada : ${tanggal(new Date())}`
+			GojoMdNx.sendTextWithMentions(m.chat, teks, m)
+            GojoMdNx.copyNForward(m.chat, await GojoMdNx.loadMessage(m.chat, quoted.id), false, { readViewOnce: true })
+        }
+	
+		
                      case 'alive': case 'bot':{
                            	timestampe = speed();
 latensie = speed() - timestampe
